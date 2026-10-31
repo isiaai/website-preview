@@ -16,6 +16,7 @@
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../assets/fonts/outfit-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/styles.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion');addEventListener('load',()=>{if(!window.claraiMotion)document.documentElement.classList.remove('motion')})}</script>
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -51,8 +52,8 @@
   <div class="mock-bar"><i></i><i></i><i></i><span>Clarai</span></div>
   <div class="mock-body">
     <div class="mock-head"><div><b>Mein KI-Logbuch</b><small>Nur für dich sichtbar</small></div><img src="../assets/pawprint-mark.svg" alt="" width="34" height="34"></div>
-    <ul class="mock-list"><li><span class="tool">ChatGPT</span><span class="prompt">Fasse die Lieferzeiten aus Q3 je Region in 5 Stichpunkten zusammen</span><span class="time">10:42</span><span class="sealed">Versiegelt</span></li><li><span class="tool">Claude</span><span class="prompt">Entwirf zwei Optionen für neue Zahlungsbedingungen</span><span class="time">11:15</span><span class="sealed">Versiegelt</span></li><li><span class="tool">Copilot</span><span class="prompt">Prüfe diesen Absatz auf unklare Formulierungen</span><span class="time">14:03</span><span class="sealed">Versiegelt</span></li></ul>
-    <div class="mock-tip"><b>Coaching-Tipp</b>Nenne das gewünschte Format – z. B. „als Tabelle mit 3 Spalten“.</div>
+    <ul class="mock-list"><li><span class="tool">ChatGPT</span><span class="prompt"><span class="full">Fasse die Lieferzeiten aus Q3 je Region in 5 Stichpunkten zusammen</span><span class="typed" aria-hidden="true"></span></span><span class="time">10:42</span><span class="sealed">Versiegelt</span></li><li><span class="tool">Claude</span><span class="prompt"><span class="full">Entwirf zwei Optionen für neue Zahlungsbedingungen</span><span class="typed" aria-hidden="true"></span></span><span class="time">11:15</span><span class="sealed">Versiegelt</span></li><li><span class="tool">Copilot</span><span class="prompt"><span class="full">Prüfe diesen Absatz auf unklare Formulierungen</span><span class="typed" aria-hidden="true"></span></span><span class="time">14:03</span><span class="sealed">Versiegelt</span></li></ul>
+    <div class="mock-tip"><b>Coaching-Tipp</b><span class="tip-text"><span class="full">Nenne das gewünschte Format – z. B. „als Tabelle mit 3 Spalten“.</span><span class="typed" aria-hidden="true"></span></span></div>
     <div class="mock-foot"><span class="mock-btn">Bericht erstellen</span></div>
   </div>
   <figcaption>Illustration von Clarai</figcaption>
@@ -63,28 +64,28 @@
   <section class="sec paper" id="problem">
     <div class="wrap">
       <p class="eyebrow">Das Problem</p>
-      <h2 class="h2">KI hilft jeden Tag. Aber zwei Dinge sind noch schwer.</h2>
+      <h2 class="h2 reveal">KI hilft jeden Tag. Aber zwei Dinge sind noch schwer.</h2>
       <div class="problems">
-        <article class="problem"><span class="pnum">1</span><h3>KI gut nutzen</h3><p>Der Prompt, der letzten Monat funktioniert hat, ist in einem alten Chat verschwunden. Die Ergebnisse sind von Person zu Person verschieden, und niemand zeigt dir, wie es besser geht.</p></article>
-        <article class="problem"><span class="pnum">2</span><h3>Zeigen, was deins ist</h3><p>Deine Teamleitung oder dein Kunde fragt, wie KI genutzt wurde. Niemand kann zeigen, welcher Teil der Arbeit wirklich von dir ist.</p></article>
+        <article class="problem reveal"><span class="pnum">1</span><h3>KI gut nutzen</h3><p>Der Prompt, der letzten Monat funktioniert hat, ist in einem alten Chat verschwunden. Die Ergebnisse sind von Person zu Person verschieden, und niemand zeigt dir, wie es besser geht.</p></article>
+        <article class="problem reveal" style="--d:.12s"><span class="pnum">2</span><h3>Zeigen, was deins ist</h3><p>Deine Teamleitung oder dein Kunde fragt, wie KI genutzt wurde. Niemand kann zeigen, welcher Teil der Arbeit wirklich von dir ist.</p></article>
       </div>
     </div>
   </section>
 
   <section class="sec tech" id="how">
     <div class="wrap">
-      <div class="sec-head"><div><p class="eyebrow">So funktioniert’s</p><h2>Zwei Technologien. Eine für jedes Problem.</h2></div><p class="lead">Clarai läuft in deinem Browser, während du ChatGPT, Claude, Copilot oder Gemini wie gewohnt nutzt.</p></div>
+      <div class="sec-head reveal"><div><p class="eyebrow">So funktioniert’s</p><h2>Zwei Technologien. Eine für jedes Problem.</h2></div><p class="lead">Clarai läuft in deinem Browser, während du ChatGPT, Claude, Copilot oder Gemini wie gewohnt nutzt.</p></div>
       <div class="mvps">
-        <article class="mvp">
-          <span class="tag">Löst: KI gut nutzen</span>
+        <article class="mvp reveal">
+          <span class="mvp-ico"><svg class="draw" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#2DD4BF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M14 16h26a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H27l-9 8v-8h-4a6 6 0 0 1-6-6V22a6 6 0 0 1 6-6z"/><path pathLength="1" d="M17 26h20"/><path pathLength="1" d="M17 32h12"/><path pathLength="1" stroke="#FFD60A" d="M53 6v10M48 11h10"/><path pathLength="1" stroke="#FFD60A" d="M57 22v5M54.5 24.5h5"/></svg></span><span class="tag">Löst: KI gut nutzen</span>
           <p class="mvp-name">Coaching</p><h3>Bessere Prompts. Bessere Ergebnisse.</h3><p>Coaching gibt dir sofort Feedback zu deinen Prompts und zeigt dir, wie du bessere Ergebnisse mit KI erzielst.</p><ul class="checks"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Schneller bessere Ergebnisse</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Wachsende Fähigkeiten</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Weniger Ausprobieren</span></li></ul>
         </article>
-        <article class="mvp">
-          <span class="tag">Löst: zeigen, was deins ist</span>
+        <article class="mvp reveal" style="--d:.12s">
+          <span class="mvp-ico"><svg class="draw" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#2DD4BF" stroke-width="2.6" stroke-linecap="round"><path pathLength="1" d="M18 14a22 22 0 0 1 28 0"/><path pathLength="1" d="M12 24a22 22 0 0 1 40 0"/><path pathLength="1" d="M14 40c0-12 8-20 18-20s18 8 18 20"/><path pathLength="1" d="M21 48c-1-4-1-6-1-9 0-7 5-12 12-12s12 5 12 12c0 4-1 8-3 12"/><path pathLength="1" d="M27 54c-1-5-1-10-1-15 0-3 3-6 6-6s6 3 6 6c0 6-1 11-3 15"/><path pathLength="1" d="M32 39c0 7 0 12-2 17"/></svg></span><span class="tag">Löst: zeigen, was deins ist</span>
           <p class="mvp-name">Fingerprint</p><h3>Deine Arbeit, belegt.</h3><p>Fingerprint zeichnet jede KI-Interaktion während der Arbeit auf und versiegelt sie, damit du jederzeit zeigen kannst, wie ein Ergebnis entstanden ist. Du siehst jeden Eintrag und entscheidest, was du teilst.</p><ul class="checks"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Deinen Beitrag belegen</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nichts rekonstruieren</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Standardmäßig privat</span></li></ul>
         </article>
       </div>
-      <div class="pilotbox">
+      <div class="pilotbox reveal">
         <div><h3>Wir suchen Teams, die Clarai mit uns testen.</h3><p>Nutze es ein paar Wochen in deiner täglichen Arbeit und sag uns, was hilft und was nicht.</p></div>
         <a class="btn btn-yellow btn-arrow" href="mailto:hello@isiaai.com?subject=Beim%20Clarai-Pilot%20mitmachen">Beim Pilot mitmachen</a>
       </div>
@@ -94,12 +95,12 @@
   <section class="sec paper" id="who">
     <div class="wrap">
       <p class="eyebrow">Wer wir sind</p>
-      <h2 class="h2">Wie arbeiten Mensch und KI gut zusammen?</h2>
-      <div class="photo" id="team-photo"><div><b>Teamfoto folgt bald</b>Unser Team in Deutschland</div></div>
+      <h2 class="h2 reveal">Wie arbeiten Mensch und KI gut zusammen?</h2>
+      <div class="photo reveal" id="team-photo"><div><b>Teamfoto folgt bald</b>Unser Team in Deutschland</div></div>
       <div class="who-grid">
-        <div class="who-text"><p>ISIaAI ist ein Projekt mit Sitz in Deutschland. Wir sind ein interdisziplinäres Team aus Business, Forschung und Softwareentwicklung, verbunden durch eine Frage: Wie können Menschen und KI gut zusammenarbeiten?</p><p>KI verändert jeden Tag, wie wir arbeiten. Wir glauben, dass dabei der menschliche Beitrag sichtbar und wertgeschätzt bleiben soll. Daran arbeiten wir – mit unserem ersten Produkt, Clarai.</p></div>
-        <figure class="logoquote">
-          <svg viewBox="0 0 364 366" aria-hidden="true"><path d="M95 8L182 58L95 108L8 58Z" fill="#C2F7EC"/><path d="M8 58L95 108L95 208L8 158Z" fill="#2DD4BF"/><path d="M95 108L182 58L182 158L95 208Z" fill="#127068"/><path d="M269 8L356 58L269 108L182 58Z" fill="#C2F7EC"/><path d="M182 58L269 108L269 208L182 158Z" fill="#2DD4BF"/><path d="M269 108L356 58L356 158L269 208Z" fill="#127068"/><path d="M182 158L269 208L182 258L95 208Z" fill="#C2F7EC"/><path d="M95 208L182 258L182 358L95 308Z" fill="#2DD4BF"/><path d="M182 258L269 208L269 308L182 358Z" fill="#127068"/></svg>
+        <div class="who-text reveal"><p>ISIaAI ist ein Projekt mit Sitz in Deutschland. Wir sind ein interdisziplinäres Team aus Business, Forschung und Softwareentwicklung, verbunden durch eine Frage: Wie können Menschen und KI gut zusammenarbeiten?</p><p>KI verändert jeden Tag, wie wir arbeiten. Wir glauben, dass dabei der menschliche Beitrag sichtbar und wertgeschätzt bleiben soll. Daran arbeiten wir – mit unserem ersten Produkt, Clarai.</p></div>
+        <figure class="logoquote reveal" style="--d:.12s">
+          <svg viewBox="0 0 364 366" aria-hidden="true"><g class="cube c1"><path d="M95 8L182 58L95 108L8 58Z" fill="#C2F7EC"/><path d="M8 58L95 108L95 208L8 158Z" fill="#2DD4BF"/><path d="M95 108L182 58L182 158L95 208Z" fill="#127068"/></g><g class="cube c2"><path d="M269 8L356 58L269 108L182 58Z" fill="#C2F7EC"/><path d="M182 58L269 108L269 208L182 158Z" fill="#2DD4BF"/><path d="M269 108L356 58L356 158L269 208Z" fill="#127068"/></g><g class="cube c3"><path d="M182 158L269 208L182 258L95 208Z" fill="#C2F7EC"/><path d="M95 208L182 258L182 358L95 308Z" fill="#2DD4BF"/><path d="M182 258L269 208L269 308L182 358Z" fill="#127068"/></g></svg>
           <blockquote>“Wo sich unsere drei Würfel treffen, entsteht ein vierter. Er existiert nur, weil die drei zusammenkommen.”</blockquote>
           <figcaption>Die Idee hinter unserem Logo: Gemeinsam schaffen wir mehr als jeder Teil allein.</figcaption>
         </figure>
@@ -109,7 +110,7 @@
 
   <section class="sec" id="contact">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
         <div><p class="eyebrow">Kontakt</p><h2>Sei dabei.</h2><p>Wir entwickeln das gemeinsam mit den Menschen, die KI in ihrer Arbeit nutzen. Teste Clarai, teile deine Erfahrungen oder verfolge einfach unseren Weg.</p>
           <p class="mailline">Oder schreib uns: <a href="mailto:hello@isiaai.com">hello@isiaai.com</a></p></div>
         <div class="ctas">
@@ -142,5 +143,6 @@ const b=document.getElementById('menuBtn');
 b.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);});
 document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false');}));
 </script>
+<script src="../assets/motion.js" defer></script>
 </body>
 </html>

@@ -16,6 +16,7 @@
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="./assets/fonts/outfit-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="./assets/styles.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion');addEventListener('load',()=>{if(!window.claraiMotion)document.documentElement.classList.remove('motion')})}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -51,8 +52,8 @@
   <div class="mock-bar"><i></i><i></i><i></i><span>Clarai</span></div>
   <div class="mock-body">
     <div class="mock-head"><div><b>My AI logbook</b><small>Only visible to you</small></div><img src="./assets/pawprint-mark.svg" alt="" width="34" height="34"></div>
-    <ul class="mock-list"><li><span class="tool">ChatGPT</span><span class="prompt">Summarise Q3 delivery times per region in 5 bullet points</span><span class="time">10:42</span><span class="sealed">Sealed</span></li><li><span class="tool">Claude</span><span class="prompt">Draft two options for renegotiating payment terms</span><span class="time">11:15</span><span class="sealed">Sealed</span></li><li><span class="tool">Copilot</span><span class="prompt">Check this paragraph for unclear wording</span><span class="time">14:03</span><span class="sealed">Sealed</span></li></ul>
-    <div class="mock-tip"><b>Coaching tip</b>Add the format you want – e.g. “as a table with 3 columns”.</div>
+    <ul class="mock-list"><li><span class="tool">ChatGPT</span><span class="prompt"><span class="full">Summarise Q3 delivery times per region in 5 bullet points</span><span class="typed" aria-hidden="true"></span></span><span class="time">10:42</span><span class="sealed">Sealed</span></li><li><span class="tool">Claude</span><span class="prompt"><span class="full">Draft two options for renegotiating payment terms</span><span class="typed" aria-hidden="true"></span></span><span class="time">11:15</span><span class="sealed">Sealed</span></li><li><span class="tool">Copilot</span><span class="prompt"><span class="full">Check this paragraph for unclear wording</span><span class="typed" aria-hidden="true"></span></span><span class="time">14:03</span><span class="sealed">Sealed</span></li></ul>
+    <div class="mock-tip"><b>Coaching tip</b><span class="tip-text"><span class="full">Add the format you want – e.g. “as a table with 3 columns”.</span><span class="typed" aria-hidden="true"></span></span></div>
     <div class="mock-foot"><span class="mock-btn">Create report</span></div>
   </div>
   <figcaption>Illustration of Clarai</figcaption>
@@ -63,28 +64,28 @@
   <section class="sec paper" id="problem">
     <div class="wrap">
       <p class="eyebrow">The problem</p>
-      <h2 class="h2">AI helps every day. But two things are still hard.</h2>
+      <h2 class="h2 reveal">AI helps every day. But two things are still hard.</h2>
       <div class="problems">
-        <article class="problem"><span class="pnum">1</span><h3>Using AI well</h3><p>The prompt that worked last month is lost in an old chat. Results vary from person to person, and nobody shows you how to get better.</p></article>
-        <article class="problem"><span class="pnum">2</span><h3>Proving what’s yours</h3><p>Your team lead or client asks how AI was used. Nobody can show which part of the work is really your own.</p></article>
+        <article class="problem reveal"><span class="pnum">1</span><h3>Using AI well</h3><p>The prompt that worked last month is lost in an old chat. Results vary from person to person, and nobody shows you how to get better.</p></article>
+        <article class="problem reveal" style="--d:.12s"><span class="pnum">2</span><h3>Proving what’s yours</h3><p>Your team lead or client asks how AI was used. Nobody can show which part of the work is really your own.</p></article>
       </div>
     </div>
   </section>
 
   <section class="sec tech" id="how">
     <div class="wrap">
-      <div class="sec-head"><div><p class="eyebrow">How it works</p><h2>Two technologies. One for each problem.</h2></div><p class="lead">Clarai runs in your browser while you use ChatGPT, Claude, Copilot or Gemini as usual.</p></div>
+      <div class="sec-head reveal"><div><p class="eyebrow">How it works</p><h2>Two technologies. One for each problem.</h2></div><p class="lead">Clarai runs in your browser while you use ChatGPT, Claude, Copilot or Gemini as usual.</p></div>
       <div class="mvps">
-        <article class="mvp">
-          <span class="tag">Solves: using AI well</span>
+        <article class="mvp reveal">
+          <span class="mvp-ico"><svg class="draw" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#2DD4BF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M14 16h26a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H27l-9 8v-8h-4a6 6 0 0 1-6-6V22a6 6 0 0 1 6-6z"/><path pathLength="1" d="M17 26h20"/><path pathLength="1" d="M17 32h12"/><path pathLength="1" stroke="#FFD60A" d="M53 6v10M48 11h10"/><path pathLength="1" stroke="#FFD60A" d="M57 22v5M54.5 24.5h5"/></svg></span><span class="tag">Solves: using AI well</span>
           <p class="mvp-name">Coaching</p><h3>Better prompts. Better results.</h3><p>Coaching gives you instant feedback on your prompts and shows you how to get better results from AI.</p><ul class="checks"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Better results, faster</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Skills that grow</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Less trial and error</span></li></ul>
         </article>
-        <article class="mvp">
-          <span class="tag">Solves: proving what’s yours</span>
+        <article class="mvp reveal" style="--d:.12s">
+          <span class="mvp-ico"><svg class="draw" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="#2DD4BF" stroke-width="2.6" stroke-linecap="round"><path pathLength="1" d="M18 14a22 22 0 0 1 28 0"/><path pathLength="1" d="M12 24a22 22 0 0 1 40 0"/><path pathLength="1" d="M14 40c0-12 8-20 18-20s18 8 18 20"/><path pathLength="1" d="M21 48c-1-4-1-6-1-9 0-7 5-12 12-12s12 5 12 12c0 4-1 8-3 12"/><path pathLength="1" d="M27 54c-1-5-1-10-1-15 0-3 3-6 6-6s6 3 6 6c0 6-1 11-3 15"/><path pathLength="1" d="M32 39c0 7 0 12-2 17"/></svg></span><span class="tag">Solves: proving what’s yours</span>
           <p class="mvp-name">Fingerprint</p><h3>Your work, verified.</h3><p>Fingerprint records each AI interaction while you work and seals it, so you can always show how a result came about. You see every entry and decide what you share.</p><ul class="checks"><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Prove your contribution</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nothing to reconstruct</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Private by default</span></li></ul>
         </article>
       </div>
-      <div class="pilotbox">
+      <div class="pilotbox reveal">
         <div><h3>We’re looking for teams to test Clarai with us.</h3><p>Use it in your daily work for a few weeks and tell us what helps and what doesn’t.</p></div>
         <a class="btn btn-yellow btn-arrow" href="mailto:hello@isiaai.com?subject=Join%20the%20Clarai%20pilot">Join the pilot</a>
       </div>
@@ -94,12 +95,12 @@
   <section class="sec paper" id="who">
     <div class="wrap">
       <p class="eyebrow">Who we are</p>
-      <h2 class="h2">How do people and AI work well together?</h2>
-      <div class="photo" id="team-photo"><div><b>Team photo coming soon</b>Our team in Germany</div></div>
+      <h2 class="h2 reveal">How do people and AI work well together?</h2>
+      <div class="photo reveal" id="team-photo"><div><b>Team photo coming soon</b>Our team in Germany</div></div>
       <div class="who-grid">
-        <div class="who-text"><p>ISIaAI is a project based in Germany. We are an interdisciplinary team from business, research and software development, united by one question: how can people and AI work well together?</p><p>AI is changing the way we work every day. We believe that in all of this, the human contribution should stay visible and valued. That’s what we’re working on, with our first product, Clarai.</p></div>
-        <figure class="logoquote">
-          <svg viewBox="0 0 364 366" aria-hidden="true"><path d="M95 8L182 58L95 108L8 58Z" fill="#C2F7EC"/><path d="M8 58L95 108L95 208L8 158Z" fill="#2DD4BF"/><path d="M95 108L182 58L182 158L95 208Z" fill="#127068"/><path d="M269 8L356 58L269 108L182 58Z" fill="#C2F7EC"/><path d="M182 58L269 108L269 208L182 158Z" fill="#2DD4BF"/><path d="M269 108L356 58L356 158L269 208Z" fill="#127068"/><path d="M182 158L269 208L182 258L95 208Z" fill="#C2F7EC"/><path d="M95 208L182 258L182 358L95 308Z" fill="#2DD4BF"/><path d="M182 258L269 208L269 308L182 358Z" fill="#127068"/></svg>
+        <div class="who-text reveal"><p>ISIaAI is a project based in Germany. We are an interdisciplinary team from business, research and software development, united by one question: how can people and AI work well together?</p><p>AI is changing the way we work every day. We believe that in all of this, the human contribution should stay visible and valued. That’s what we’re working on, with our first product, Clarai.</p></div>
+        <figure class="logoquote reveal" style="--d:.12s">
+          <svg viewBox="0 0 364 366" aria-hidden="true"><g class="cube c1"><path d="M95 8L182 58L95 108L8 58Z" fill="#C2F7EC"/><path d="M8 58L95 108L95 208L8 158Z" fill="#2DD4BF"/><path d="M95 108L182 58L182 158L95 208Z" fill="#127068"/></g><g class="cube c2"><path d="M269 8L356 58L269 108L182 58Z" fill="#C2F7EC"/><path d="M182 58L269 108L269 208L182 158Z" fill="#2DD4BF"/><path d="M269 108L356 58L356 158L269 208Z" fill="#127068"/></g><g class="cube c3"><path d="M182 158L269 208L182 258L95 208Z" fill="#C2F7EC"/><path d="M95 208L182 258L182 358L95 308Z" fill="#2DD4BF"/><path d="M182 258L269 208L269 308L182 358Z" fill="#127068"/></g></svg>
           <blockquote>“Where our three cubes meet, a fourth one appears. It only exists because the three come together.”</blockquote>
           <figcaption>The idea behind our logo: together, we create more than any part alone.</figcaption>
         </figure>
@@ -109,7 +110,7 @@
 
   <section class="sec" id="contact">
     <div class="wrap">
-      <div class="cta">
+      <div class="cta reveal">
         <div><p class="eyebrow">Contact</p><h2>Be part of it.</h2><p>We’re building this together with the people who use AI in their work. Test Clarai, share your experience or simply follow our journey.</p>
           <p class="mailline">Or write to us: <a href="mailto:hello@isiaai.com">hello@isiaai.com</a></p></div>
         <div class="ctas">
@@ -142,5 +143,6 @@ const b=document.getElementById('menuBtn');
 b.addEventListener('click',()=>{const o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);});
 document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false');}));
 </script>
+<script src="./assets/motion.js" defer></script>
 </body>
 </html>

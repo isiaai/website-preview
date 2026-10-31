@@ -10,12 +10,16 @@ All copy lives in `build.py` (dict `T`, keys `en` / `de`). After editing run:
 
 and commit the regenerated `index.html`, `de/index.html`, `impressum/index.html`, `datenschutz/index.html`.
 
+## Motion
+Animations live in `assets/motion.js` + the `/* motion */` block in `assets/styles.css`. Visitors with "reduce motion" turned on get the static page.
+
 ## Deploy (Cloudflare Pages)
 Workers & Pages → Create → Pages → Connect to Git → this repo.
 Framework preset: None · Build command: *(empty)* · Output directory: `/`.
 Every push to `main` deploys automatically. Then add the custom domain `isiaai.com`.
 
 ## Before going live
+- Set `PREVIEW = False` in build.py (relative paths + noindex are only for the GitHub Pages preview) and allow crawling in robots.txt
 - Impressum: fill the yellow placeholders (legal form, address, managing director, register, VAT ID)
 - Datenschutz: legal check (Alina)
 - Team photo: set TEAM_PHOTO in build.py (put the image in `assets/`)
