@@ -18,4 +18,7 @@ Every push to `main` deploys automatically. Then add the custom domain `isiaai.c
 ## Before going live
 - Impressum: fill the yellow placeholders (legal form, address, managing director, register, VAT ID)
 - Datenschutz: legal check (Alina)
-- Team photo: replace the placeholder in `#team-photo` (put the image in `assets/`)
+- Team photo: set TEAM_PHOTO in build.py (put the image in `assets/`)
+- Booking link: set BOOKING_URL in build.py (Isaac)
+- LinkedIn: check LINKEDIN_URL spelling
+- EU AI Act line in footer: wording check (Alina)
