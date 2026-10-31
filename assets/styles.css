@@ -149,7 +149,7 @@ p{margin:0}
 
 /* footer */
 footer{background:var(--ink);color:var(--dtext);padding-block:3.5rem 2rem;font-size:.92rem}
-.f-grid{display:grid;grid-template-columns:1.6fr auto 1fr 1fr;gap:2rem;align-items:start}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem;align-items:start}
 .f-brand img{height:30px;width:auto;margin-bottom:1rem}
 .f-brand p{max-width:40ch}
 .f-aiact{margin-top:.8rem;color:var(--lagoon)}
