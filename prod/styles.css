@@ -195,11 +195,6 @@ footer a{text-decoration:none}footer a:hover{color:#fff;text-decoration:underlin
 
 
 /* logo quote: the three cubes slide together – where they meet, the fourth appears */
-.motion .logoquote .cube{transition:translate 1s cubic-bezier(.2,.8,.2,1) .35s,opacity .6s .35s;opacity:0}
-.motion .logoquote .c1{translate:-60px -40px}
-.motion .logoquote .c2{translate:60px -40px}
-.motion .logoquote .c3{translate:0 70px}
-.motion .logoquote.in .cube{translate:0 0;opacity:1}
 
 /* hero entrance: copy rises, preview rises, entries appear one by one and get sealed (plays once) */
 @keyframes pop{0%{opacity:0;scale:.6}60%{opacity:1;scale:1.12}100%{opacity:1;scale:1}}
@@ -214,8 +209,6 @@ footer a{text-decoration:none}footer a:hover{color:#fff;text-decoration:underlin
 .mvp-ico{position:absolute;top:clamp(1rem,2.4vw,1.6rem);right:clamp(1rem,2.4vw,1.6rem)}
 .mvp-ico .jelly{width:84px;height:84px;display:block}
 .mvp .tag,.mvp-name,.mvp h3{max-width:calc(100% - 96px)}
-.motion .mvp .jelly{opacity:0;translate:0 14px;transition:opacity .8s .2s,translate 1s .2s cubic-bezier(.22,1,.36,1)}
-.motion .mvp.in .jelly{opacity:1;translate:0 0}
 .mvp-lead{color:#fff!important;font-size:1.05rem}
 .steps-flow{list-style:none;margin:.4rem 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem;counter-reset:fl}
 .steps-flow li{counter-increment:fl;display:flex;align-items:center;gap:.45rem;font:500 .86rem/1.2 var(--fu);color:var(--dark);background:var(--lagoon);border-radius:99px;padding:.45em .8em .45em .45em}
@@ -230,3 +223,19 @@ footer a{text-decoration:none}footer a:hover{color:#fff;text-decoration:underlin
 @media (max-width:760px){.cta-side{align-items:flex-start}.cta-side .seal{width:108px;height:108px}}
 @media (prefers-reduced-motion:reduce){.motion *{animation:none!important}}
 .mvp h3,.pilotbox h3{line-height:1.15}
+
+/* scroll-linked motion: motion.js sets --p (0 → 1) while the element scrolls into view */
+@keyframes swim{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-8px) rotate(3deg)}}
+.motion .mvp-ico{--p:0;opacity:calc(var(--p) * 1.4);transform:translateY(calc((1 - var(--p)) * 90px)) scale(calc(.6 + var(--p) * .4)) rotate(calc((1 - var(--p)) * -18deg));will-change:transform}
+.motion .mvp-ico.settled .jelly{animation:swim 4.5s ease-in-out infinite}
+.motion .mvp:nth-child(2) .mvp-ico.settled .jelly{animation-delay:-2.2s}
+.logoquote svg{overflow:visible}
+.logoquote .cube{transform-box:fill-box;transform-origin:center}
+.motion .logoquote{--p:0}
+.motion .logoquote .cube{opacity:calc(.15 + var(--p));will-change:transform}
+.motion .logoquote .c1{transform:translate(calc((1 - var(--p)) * -520px),calc((1 - var(--p)) * -330px)) rotate(calc((1 - var(--p)) * -90deg))}
+.motion .logoquote .c2{transform:translate(calc((1 - var(--p)) * 520px),calc((1 - var(--p)) * -330px)) rotate(calc((1 - var(--p)) * 90deg))}
+.motion .logoquote .c3{transform:translate(0,calc((1 - var(--p)) * 600px)) rotate(calc((1 - var(--p)) * 45deg))}
+.motion .logoquote.joined svg{animation:bump .6s cubic-bezier(.3,1.6,.5,1)}
+@media (prefers-reduced-motion:reduce){.motion .mvp-ico,.motion .logoquote .cube{opacity:1!important;transform:none!important}}
+@keyframes bump{0%,100%{scale:1}50%{scale:1.15}}
