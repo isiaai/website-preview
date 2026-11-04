@@ -19,7 +19,6 @@ Framework preset: None · Build command: *(empty)* · Output directory: `/`.
 Every push to `main` deploys automatically. Then add the custom domain `isiaai.com`.
 
 ## Before going live
-- Set `PREVIEW = False` in build.py (relative paths + noindex are only for the GitHub Pages preview) and allow crawling in robots.txt
 - Impressum: fill the yellow placeholders (legal form, address, managing director, register, VAT ID)
 - Datenschutz: legal check (Alina)
 - Team photo: set TEAM_PHOTO in build.py (put the image in `assets/`)
